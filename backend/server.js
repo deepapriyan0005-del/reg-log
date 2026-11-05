@@ -22,9 +22,12 @@ mongoose
   .then(() => {
     console.log("MongoDB Connected");
 
-    app.listen(9000, () => {
-      console.log("Server running on http://localhost:9000");
-    });
+    
+    const PORT = process.env.PORT || 9000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
   })
   .catch((error) => {
     console.log("MongoDB connection error:", error);
