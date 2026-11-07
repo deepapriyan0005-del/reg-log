@@ -48,7 +48,7 @@ function ResetPassword() {
 
     try {
       const response = await axios.post(
-        "http://localhost:9000/api/auth/reset-password",
+        "https://reg-log-koz0.onrender.com/api/auth/reset-password",
         {
           email,
           password,

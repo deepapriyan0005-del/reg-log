@@ -24,7 +24,7 @@ function ForgotPassword() {
 
     try {
       const response = await axios.post(
-        "http://localhost:9000/api/auth/forgot-password",
+       "https://reg-log-koz0.onrender.com/api/auth/forgot-password",
         {
           email
         }
@@ -67,7 +67,7 @@ function ForgotPassword() {
 
     try {
       const response = await axios.post(
-        "http://localhost:9000/api/auth/forgot-password/verify-otp",
+        "https://reg-log-koz0.onrender.com/api/auth/forgot-password/verify-otp",
         {
           email,
           otp

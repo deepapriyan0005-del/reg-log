@@ -36,7 +36,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:9000/api/auth/login",
+        "https://reg-log-koz0.onrender.com/api/auth/login",
         {
           email,
           password
@@ -87,7 +87,7 @@ function Login() {
   const handleResendOtp = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:9000/api/auth/resend-otp",
+        "https://reg-log-backend.onrender.com/api/auth/resend-otp",
         {
           email
         }
@@ -132,7 +132,8 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:9000/api/auth/verify-otp",
+        "https://reg-log-koz0.onrender.com/api/auth/verify-otp",
+
         {
           email,
           otp

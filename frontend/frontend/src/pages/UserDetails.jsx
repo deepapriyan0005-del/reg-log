@@ -22,7 +22,8 @@ function UserDetails() {
   
     try {
       const response = await axios.get(
-        "http://localhost:9000/api/auth/user",
+        "https://reg-log-backend.onrender.com/api/auth/",
+
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -76,7 +77,7 @@ function UserDetails() {
       }
 
       const response = await axios.put(
-        "http://localhost:9000/api/auth/user",
+        "https://reg-log-koz0.onrender.com/api/auth/user",
         data,
         {
           headers: {
@@ -109,7 +110,7 @@ function UserDetails() {
 
     try {
       await axios.delete(
-        "http://localhost:9000/api/auth/user",
+        "https://reg-log-koz0.onrender.com/api/auth/user",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -255,7 +256,7 @@ function UserDetails() {
               {editMode ? (
                 <>
                   <img
-                    src={`http://localhost:9000/uploads/${user.image}`}
+                    src={`https://reg-log-backend.onrender.com/uploads/${user.image}`}
                     alt="profile"
                     width="80"
                   />
@@ -276,7 +277,7 @@ function UserDetails() {
               ) : (
                 user.image && (
                   <img
-                    src={`http://localhost:9000/uploads/${user.image}`}
+                    src={`https://reg-log-backend.onrender.com/uploads/${user.image}`}
                     alt="profile"
                     width="80"
                   />

@@ -161,7 +161,7 @@ function Register() {
       );
 
       const response = await axios.post(
-        "http://localhost:9000/api/auth/register",
+        "https://reg-log-koz0.onrender.com/api/auth/register",
         data
       );
 

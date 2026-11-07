@@ -13,7 +13,7 @@ function LoginHistory() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:9000/api/auth/login-history",
+        "https://reg-log-backend.onrender.com/api/auth/login-history",
         {
           headers: {
             Authorization: `Bearer ${token}`
