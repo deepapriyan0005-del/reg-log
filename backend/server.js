@@ -17,6 +17,10 @@ app.use("/uploads", express.static("uploads"));
 
 app.use("/api/auth", authRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Reg-Log Backend is Running");
+});
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
