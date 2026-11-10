@@ -51,7 +51,7 @@ function ChangePassword() {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "https://reg-log-koz0.onrender.com/api/auth/change-password",
+        "https://reg-log-backend.onrender.com/api/auth/change-password",
         {
           currentPassword,
           newPassword,

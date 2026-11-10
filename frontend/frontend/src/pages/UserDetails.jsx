@@ -77,7 +77,7 @@ function UserDetails() {
       }
 
       const response = await axios.put(
-        "https://reg-log-koz0.onrender.com/api/auth/user",
+        "https://reg-log-backend.onrender.com/api/auth/user",
         data,
         {
           headers: {
@@ -110,7 +110,7 @@ function UserDetails() {
 
     try {
       await axios.delete(
-        "https://reg-log-koz0.onrender.com/api/auth/user",
+        "https://reg-log-backend.onrender.com/api/auth/user",
         {
           headers: {
             Authorization: `Bearer ${token}`

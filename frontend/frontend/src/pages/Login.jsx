@@ -36,7 +36,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "https://reg-log-koz0.onrender.com/api/auth/login",
+        "https://reg-log-backend.onrender.com/api/auth/login",
         {
           email,
           password
@@ -132,7 +132,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "https://reg-log-koz0.onrender.com/api/auth/verify-otp",
+        "https://reg-log-backend.onrender.com/api/auth/verify-otp",
 
         {
           email,
